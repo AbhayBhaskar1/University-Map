@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_755cc5968f794405bc3ceb7eed61521a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_755cc5968f794405bc3ceb7eed61521a" ></div>
+        
+</body>
+<script>    
+    
+            var map_755cc5968f794405bc3ceb7eed61521a = L.map(
+                "map_755cc5968f794405bc3ceb7eed61521a",
+                {
+                    center: [42.3394998755698, -71.08892085506822],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2157e74ab208460a8aeb5dcb26731c01 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_755cc5968f794405bc3ceb7eed61521a);
+        
+    
+            var feature_group_c2197f4bdd5d482babc3a9c979ab1911 = L.featureGroup(
+                {}
+            ).addTo(map_755cc5968f794405bc3ceb7eed61521a);
+        
+    
+            var marker_7646369a1812453bbca424efaf1ef3f2 = L.marker(
+                [42.33979081846425, -71.0891931591313],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_9ce0f1f958be4b57b63985ddab3b34ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7646369a1812453bbca424efaf1ef3f2.setIcon(icon_9ce0f1f958be4b57b63985ddab3b34ae);
+        
+    
+        var popup_c0e4b093d86f4e988a2d9f4a26d2a25a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a6f18b08de046629ddaf4b399b49808 = $(`<div id="html_6a6f18b08de046629ddaf4b399b49808" style="width: 100.0%; height: 100.0%;">Northeastern University</div>`)[0];
+            popup_c0e4b093d86f4e988a2d9f4a26d2a25a.setContent(html_6a6f18b08de046629ddaf4b399b49808);
+        
+
+        marker_7646369a1812453bbca424efaf1ef3f2.bindPopup(popup_c0e4b093d86f4e988a2d9f4a26d2a25a)
+        ;
+
+        
+    
+    
+            var marker_efdb5c2d35cd49a183d26b945a3e3d67 = L.marker(
+                [32.72932694163503, -97.11486600349166],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_ee690198733242b7927ac265971a5957 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_efdb5c2d35cd49a183d26b945a3e3d67.setIcon(icon_ee690198733242b7927ac265971a5957);
+        
+    
+        var popup_61140b60e43a4affa1306afc7b8c6260 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4519cd5628f74dd6a3137b7d38b45994 = $(`<div id="html_4519cd5628f74dd6a3137b7d38b45994" style="width: 100.0%; height: 100.0%;">University of Texas at Arlington</div>`)[0];
+            popup_61140b60e43a4affa1306afc7b8c6260.setContent(html_4519cd5628f74dd6a3137b7d38b45994);
+        
+
+        marker_efdb5c2d35cd49a183d26b945a3e3d67.bindPopup(popup_61140b60e43a4affa1306afc7b8c6260)
+        ;
+
+        
+    
+    
+            var marker_bad6bc51f30f48ef83f60d8122ae68d2 = L.marker(
+                [41.83492903535272, -87.62695225729341],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_f596d305b91744ff89e4b2b088ef823b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bad6bc51f30f48ef83f60d8122ae68d2.setIcon(icon_f596d305b91744ff89e4b2b088ef823b);
+        
+    
+        var popup_180ec9c84c474fb2b42d041e1880e81e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f915e826510b4acf8182249db0bd9072 = $(`<div id="html_f915e826510b4acf8182249db0bd9072" style="width: 100.0%; height: 100.0%;">Illinois Institute of Technology</div>`)[0];
+            popup_180ec9c84c474fb2b42d041e1880e81e.setContent(html_f915e826510b4acf8182249db0bd9072);
+        
+
+        marker_bad6bc51f30f48ef83f60d8122ae68d2.bindPopup(popup_180ec9c84c474fb2b42d041e1880e81e)
+        ;
+
+        
+    
+    
+            var marker_8cf9b0cf8a1a4640b8c419937ae4ec94 = L.marker(
+                [39.131062, -84.517769],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_0e261c037d014733948e81f6e8d96b7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cf9b0cf8a1a4640b8c419937ae4ec94.setIcon(icon_0e261c037d014733948e81f6e8d96b7e);
+        
+    
+        var popup_ff5e52d426894b7cb738966e16a1f9df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d5fdb79e467499ebeaa26e566daaa87 = $(`<div id="html_8d5fdb79e467499ebeaa26e566daaa87" style="width: 100.0%; height: 100.0%;">University of Cincinnati</div>`)[0];
+            popup_ff5e52d426894b7cb738966e16a1f9df.setContent(html_8d5fdb79e467499ebeaa26e566daaa87);
+        
+
+        marker_8cf9b0cf8a1a4640b8c419937ae4ec94.bindPopup(popup_ff5e52d426894b7cb738966e16a1f9df)
+        ;
+
+        
+    
+    
+            var marker_0a8e6413973d40f7b781a7ed00f8a2fb = L.marker(
+                [33.421021, -111.931488],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_d872b894393844ac8d79df5bd1a7272f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a8e6413973d40f7b781a7ed00f8a2fb.setIcon(icon_d872b894393844ac8d79df5bd1a7272f);
+        
+    
+        var popup_2ebaa2d1bfd14d31ba477c5e55a83fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b98f90c3c9140e9a6bd57540eabc080 = $(`<div id="html_5b98f90c3c9140e9a6bd57540eabc080" style="width: 100.0%; height: 100.0%;">Arizona State University</div>`)[0];
+            popup_2ebaa2d1bfd14d31ba477c5e55a83fb1.setContent(html_5b98f90c3c9140e9a6bd57540eabc080);
+        
+
+        marker_0a8e6413973d40f7b781a7ed00f8a2fb.bindPopup(popup_2ebaa2d1bfd14d31ba477c5e55a83fb1)
+        ;
+
+        
+    
+    
+            var marker_ffa862c7b4ca4c48a90d72ecc5088c90 = L.marker(
+                [40.740726, -74.179512],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_14663a16474c4e6e891c36641eb2afe3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ffa862c7b4ca4c48a90d72ecc5088c90.setIcon(icon_14663a16474c4e6e891c36641eb2afe3);
+        
+    
+        var popup_8b6a04e86fbf43a0a102c8c723675a47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df668f7b07b74b6cb2d3f92afddf4a77 = $(`<div id="html_df668f7b07b74b6cb2d3f92afddf4a77" style="width: 100.0%; height: 100.0%;">New Jersey Institute of Technology</div>`)[0];
+            popup_8b6a04e86fbf43a0a102c8c723675a47.setContent(html_df668f7b07b74b6cb2d3f92afddf4a77);
+        
+
+        marker_ffa862c7b4ca4c48a90d72ecc5088c90.bindPopup(popup_8b6a04e86fbf43a0a102c8c723675a47)
+        ;
+
+        
+    
+    
+            var marker_dc114c04ef4740ecb69193112c74e932 = L.marker(
+                [32.98632, -96.750488],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_be0c30417f7f47aa96ef086d017a0ef9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc114c04ef4740ecb69193112c74e932.setIcon(icon_be0c30417f7f47aa96ef086d017a0ef9);
+        
+    
+        var popup_b86dc8d86e09492e8baea57acf140e2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b6f27a9ecde424d95584646c5030c80 = $(`<div id="html_6b6f27a9ecde424d95584646c5030c80" style="width: 100.0%; height: 100.0%;">The University of Texas at Dallas</div>`)[0];
+            popup_b86dc8d86e09492e8baea57acf140e2d.setContent(html_6b6f27a9ecde424d95584646c5030c80);
+        
+
+        marker_dc114c04ef4740ecb69193112c74e932.bindPopup(popup_b86dc8d86e09492e8baea57acf140e2d)
+        ;
+
+        
+    
+    
+            var marker_48a69861a10e4034af9df8d01bb4e3af = L.marker(
+                [41.870224, -87.64933],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_ff008ccf17e74eed9aeb72b58cbc5eae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48a69861a10e4034af9df8d01bb4e3af.setIcon(icon_ff008ccf17e74eed9aeb72b58cbc5eae);
+        
+    
+        var popup_820171cd01c846efa7aeda30e1038703 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b568f4c7d524640b5afc53ce058fb0e = $(`<div id="html_8b568f4c7d524640b5afc53ce058fb0e" style="width: 100.0%; height: 100.0%;">The University of Illinois at Chicago</div>`)[0];
+            popup_820171cd01c846efa7aeda30e1038703.setContent(html_8b568f4c7d524640b5afc53ce058fb0e);
+        
+
+        marker_48a69861a10e4034af9df8d01bb4e3af.bindPopup(popup_820171cd01c846efa7aeda30e1038703)
+        ;
+
+        
+    
+    
+            var marker_6b3398e05439465d82e963998dae5e29 = L.marker(
+                [28.058708, -82.41552],
+                {}
+            ).addTo(feature_group_c2197f4bdd5d482babc3a9c979ab1911);
+        
+    
+            var icon_95deffc555ed435dbf4c24a0eff5708e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b3398e05439465d82e963998dae5e29.setIcon(icon_95deffc555ed435dbf4c24a0eff5708e);
+        
+    
+        var popup_85ef1bbc8e1042a49210033b3221ad4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b452f2877b7e43fd821b2db62909f01e = $(`<div id="html_b452f2877b7e43fd821b2db62909f01e" style="width: 100.0%; height: 100.0%;">University of South Florida</div>`)[0];
+            popup_85ef1bbc8e1042a49210033b3221ad4e.setContent(html_b452f2877b7e43fd821b2db62909f01e);
+        
+
+        marker_6b3398e05439465d82e963998dae5e29.bindPopup(popup_85ef1bbc8e1042a49210033b3221ad4e)
+        ;
+
+        
+    
+    
+            var layer_control_8e7ec0bde7674aed915dee6045fa87ec = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_2157e74ab208460a8aeb5dcb26731c01,
+                },
+                overlays :  {
+                    "Universities" : feature_group_c2197f4bdd5d482babc3a9c979ab1911,
+                },
+            };
+            L.control.layers(
+                layer_control_8e7ec0bde7674aed915dee6045fa87ec.base_layers,
+                layer_control_8e7ec0bde7674aed915dee6045fa87ec.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_755cc5968f794405bc3ceb7eed61521a);
+        
+</script>

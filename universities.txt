@@ -1,0 +1,11 @@
+NAME,LAT,LON
+Northeastern University,42.33979081846425,-71.0891931591313
+University of Texas at Arlington,32.72932694163503,-97.11486600349166
+Illinois Institute of Technology,41.83492903535272,-87.62695225729341
+University of Cincinnati,39.131062, -84.517769
+Arizona State University,33.421021, -111.931488
+New Jersey Institute of Technology,40.740726, -74.179512
+The University of Texas at Dallas,32.986320, -96.750488
+The University of Illinois at Chicago,41.870224, -87.649330
+University of South Florida,28.058708, -82.415520
+
